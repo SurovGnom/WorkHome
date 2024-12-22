@@ -1,0 +1,62 @@
+#wrapper {
+    width: 600px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#carousel {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+#content img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(199, 27, 27,0.8);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+}
+
+button#chevron_prev {
+    left: 10px;
+}
+
+button#chevron_next {
+    right: 10px;
+}
+
+#dot {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#dot span {
+    height: 12px;
+    width: 12px;
+    margin: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#dot .active {
+    background-color: #c71b1b;
+}
