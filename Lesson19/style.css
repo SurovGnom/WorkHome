@@ -1,0 +1,19 @@
+*,*::before,*::after {
+    font-family: Monserrat, sans-serif;
+}
+.weather-info{
+    color: #4c8bd5;
+    padding: 4px 8px;
+    font-size: 18px;
+}
+button{
+    padding: 4px 8px;
+    background-color: #4c8bd5;
+    color: white;
+    border-radius: 8px;
+    border: none;
+}
+button:hover {
+    transform: translate(25%);
+    transition: 1.25s ease-in-out;
+}
