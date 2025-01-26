@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+<div class="input-group">
+<input type="number" id="hoursInput" placeholder="00" min="0" max="99" oninput="this.value = this.value.padStart(2, '0').slice(-2);">
+    <span class="two-point">:</span>
+<input type="number" id="minutesInput" placeholder="00" value="01" min="0" max="59" oninput="this.value = this.value.padStart(2, '0').slice(-2);">
+    <span class="two-point">:</span>
+<input type="number" id="secondsInput" placeholder="00" value="25" min="00" max="59" oninput="this.value = this.value.padStart(2, '0').slice(-2);">
+<button id="startButton">Start Timer</button>
+</div>
+<div id="timersContainer"></div>
+</body>
+</html>
