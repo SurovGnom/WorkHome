@@ -24,12 +24,12 @@ async function getWeather() {
 
 function displayWeather(data) {
     const weatherInfo = `
-                <p>City: ${data.name}</p>
-                <p>Temperature: ${data.main.temp}°C</p>
-                <p>Humidity: ${data.main.humidity}%</p>
-                <p>Description: ${data.weather[0].description}</p>
+                City: ${data.name}
+                Temperature: ${data.main.temp}°C
+                Humidity: ${data.main.humidity}%
+                Description: ${data.weather[0].description}
             `;
-    document.getElementById('weather-info').innerHTML = weatherInfo;
+    document.getElementById('weather-info').innerText = weatherInfo;
 }
 
 
